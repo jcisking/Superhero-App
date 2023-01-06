@@ -1,4 +1,5 @@
 <resources>
+    <string name="app_name">Hero App</string>
     <string name="hero1">Nick The Night And Day</string>
     <string name="hero2">Reality Protector</string>
     <string name="hero3">Andre The Giant</string>
