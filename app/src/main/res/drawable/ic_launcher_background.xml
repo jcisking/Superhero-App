@@ -19,11 +19,16 @@
     android:height="108dp"
     android:viewportWidth="108"
     android:viewportHeight="108">
-  <group android:scaleX="0.99722993"
-      android:scaleY="0.99722993">
+  <group android:scaleX="1.01"
+      android:scaleY="1.01"
+      android:translateX="-0.54"
+      android:translateY="-0.54">
+    <group android:scaleX="0.99722993"
+        android:scaleY="0.99722993">
 
-      <path
-          android:fillColor="#F86734"
-          android:pathData="M 0 0 H 108.3 V 108.3 H 0 V 0 Z" />
+        <path
+            android:fillColor="#F86734"
+            android:pathData="M 0 0 H 108.3 V 108.3 H 0 V 0 Z" />
+    </group>
   </group>
 </vector>
