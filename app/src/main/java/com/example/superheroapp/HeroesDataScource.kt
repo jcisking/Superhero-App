@@ -25,10 +25,12 @@ import com.example.superheroapp.data.Hero
 fun HeroItem(hero: Hero, modifier: Modifier = Modifier) {
     Card(
         modifier = Modifier
-            .padding(horizontal = 16.dp, vertical = 8.dp).height(72.dp),
+            .padding(horizontal = 16.dp, vertical = 8.dp),
         elevation = 2.dp, shape = RoundedCornerShape(16.dp)) {
-        Row(modifier = Modifier.background(Color.Red).padding(),
-            verticalAlignment = Alignment.Top
+        Row(
+            modifier = Modifier
+                .padding(16.dp)
+                .height(72.dp)
         ) {
             HeroInformation(
                 modifier = Modifier.weight(1f),
@@ -50,10 +52,11 @@ fun HeroInformation(@StringRes heroName: Int, heroDescription: Int, modifier: Mo
 
 @Composable
 fun HeroIcon(@DrawableRes heroImage: Int, modifier: Modifier = Modifier) {
-    Image(modifier = modifier
-//        .padding(end = 16.dp)
-//        .size(64.dp)
-        .clip(RoundedCornerShape(8.dp)),
+    Image(
+        modifier = modifier
+            .padding(start = 16.dp)
+            .clip(RoundedCornerShape(8.dp)
+        ),
         painter = painterResource(id = heroImage),
         contentDescription = null
     )
