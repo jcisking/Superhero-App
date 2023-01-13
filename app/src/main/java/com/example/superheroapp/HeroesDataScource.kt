@@ -64,8 +64,19 @@ fun HeroIcon(@DrawableRes heroImage: Int, modifier: Modifier = Modifier) {
 }
 @Composable
 fun HeroTopAppBar(modifier: Modifier = Modifier) {
-    Row(modifier = modifier.height(59.dp).background(Color.Blue).fillMaxWidth()) {
-        Text(text = "sakwjd")
+    Row(
+        modifier = modifier
+            .height(56.dp)
+            .background(MaterialTheme.colors.background)
+            .fillMaxWidth(),
+        horizontalArrangement = Arrangement.Center,
+        verticalAlignment = Alignment.CenterVertically
+    ) {
+        Text(
+            text = "Superheroes",
+            color = MaterialTheme.colors.onPrimary,
+            style = MaterialTheme.typography.h1
+        )
     }
 
 }
