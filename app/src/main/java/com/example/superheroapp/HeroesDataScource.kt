@@ -55,9 +55,17 @@ fun HeroIcon(@DrawableRes heroImage: Int, modifier: Modifier = Modifier) {
     Image(
         modifier = modifier
             .padding(start = 16.dp)
-            .clip(RoundedCornerShape(8.dp)
-        ),
+            .clip(
+                RoundedCornerShape(8.dp)
+            ),
         painter = painterResource(id = heroImage),
         contentDescription = null
     )
+}
+@Composable
+fun HeroTopAppBar(modifier: Modifier = Modifier) {
+    Row(modifier = modifier.height(59.dp).background(Color.Blue).fillMaxWidth()) {
+        Text(text = "sakwjd")
+    }
+
 }

@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.Scaffold
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -36,10 +37,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun HeroApp() {
-    LazyColumn() {
-        this.items(HeroesRepository.heroes) {
-            HeroItem(hero = it)
+    Scaffold(topBar = {HeroTopAppBar()}) {
+        LazyColumn() {
+            this.items(HeroesRepository.heroes) {
+                HeroItem(hero = it)
 
+            }
         }
     }
 }
